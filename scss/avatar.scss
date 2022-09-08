@@ -1,0 +1,34 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/vendor/rfs";
+@import 'mixins';
+@import 'variables';
+
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+
+  @include rfs($avatar-font-size, --#{$prefix}avatar-font-size);
+  @include rfs($avatar-font-weight, --#{$prefix}avatar-font-weight);
+  @include rfs($body-color, --#{$prefix}avatar-color);
+}
+
+.avatar-circle {
+  border-radius: .25rem;
+
+  > img {
+    border-radius: .25rem;
+    width: 100%;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .avatar-#{$color} {
+    @include avatar-variant($value, $value);
+  }
+}

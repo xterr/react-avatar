@@ -1,0 +1,36 @@
+@mixin avatar-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-background: if($color == $color-contrast-light, shade-color($background, $avatar-hover-bg-shade-amount), tint-color($background, $avatar-hover-bg-tint-amount)),
+  $hover-border: if($color == $color-contrast-light, shade-color($border, $avatar-hover-border-shade-amount), tint-color($border, $avatar-hover-border-tint-amount)),
+  $hover-color: color-contrast($hover-background),
+  $active-background: if($color == $color-contrast-light, shade-color($background, $avatar-active-bg-shade-amount), tint-color($background, $avatar-active-bg-tint-amount)),
+  $active-border: if($color == $color-contrast-light, shade-color($border, $avatar-active-border-shade-amount), tint-color($border, $avatar-active-border-tint-amount)),
+  $active-color: color-contrast($active-background),
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)
+) {
+  --#{$prefix}avatar-color: #{$color};
+  --#{$prefix}avatar-bg: #{$background};
+  --#{$prefix}avatar-border-color: #{$border};
+  --#{$prefix}avatar-hover-color: #{$hover-color};
+  --#{$prefix}avatar-hover-bg: #{$hover-background};
+  --#{$prefix}avatar-hover-border-color: #{$hover-border};
+  --#{$prefix}avatar-focus-shadow-rgb: #{to-rgb(mix($color, $border, 15%))};
+  --#{$prefix}avatar-active-color: #{$active-color};
+  --#{$prefix}avatar-active-bg: #{$active-background};
+  --#{$prefix}avatar-active-border-color: #{$active-border};
+  --#{$prefix}avatar-active-shadow: #{$avatar-active-box-shadow};
+  --#{$prefix}avatar-disabled-color: #{$disabled-color};
+  --#{$prefix}avatar-disabled-bg: #{$disabled-background};
+  --#{$prefix}avatar-disabled-border-color: #{$disabled-border};
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+  --#{$prefix}btn-padding-y: #{$padding-y};
+  --#{$prefix}btn-padding-x: #{$padding-x};
+  @include rfs($font-size, --#{$prefix}btn-font-size);
+  --#{$prefix}btn-border-radius: #{$border-radius};
+}

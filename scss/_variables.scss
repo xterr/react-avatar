@@ -1,0 +1,15 @@
+$avatar-font-size: $font-size-base !default;
+$avatar-font-size-sm: $font-size-sm !default;
+$avatar-font-size-lg: $font-size-lg !default;
+
+$avatar-font-weight: $font-weight-normal !default;
+
+$avatar-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
+$avatar-hover-bg-shade-amount:       15% !default;
+$avatar-hover-bg-tint-amount:        15% !default;
+$avatar-hover-border-shade-amount:   20% !default;
+$avatar-hover-border-tint-amount:    10% !default;
+$avatar-active-bg-shade-amount:      20% !default;
+$avatar-active-bg-tint-amount:       20% !default;
+$avatar-active-border-shade-amount:  25% !default;
+$avatar-active-border-tint-amount:   10% !default;
