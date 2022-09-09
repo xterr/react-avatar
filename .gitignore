@@ -2,7 +2,8 @@
 dist
 node_modules
 coverage
-
+index.html
+css
 ## Yarn
 .pnp.*
 .yarn/*

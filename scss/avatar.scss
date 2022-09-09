@@ -1,6 +1,6 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/vendor/rfs";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/vendor/rfs';
 @import 'mixins';
 @import 'variables';
 
@@ -16,6 +16,13 @@
   @include rfs($avatar-font-size, --#{$prefix}avatar-font-size);
   @include rfs($avatar-font-weight, --#{$prefix}avatar-font-weight);
   @include rfs($body-color, --#{$prefix}avatar-color);
+
+  color: var(--#{$prefix}avatar-color);
+  background-color: var(--#{$prefix}avatar-bg);
+  font-size: var(--#{$prefix}avatar-font-size);
+  font-weight: var(--#{$prefix}avatar-font-weight);
+  width: var(--#{$prefix}avatar-width);
+  height: var(--#{$prefix}avatar-height);
 }
 
 .avatar-circle {
@@ -30,5 +37,11 @@
 @each $color, $value in $theme-colors {
   .avatar-#{$color} {
     @include avatar-variant($value, $value);
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  .avatar-#{$breakpoint} {
+    @include avatar-size($breakpoint);
   }
 }

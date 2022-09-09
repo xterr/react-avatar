@@ -1,6 +1,10 @@
 $avatar-font-size: $font-size-base !default;
 $avatar-font-size-sm: $font-size-sm !default;
+$avatar-font-size-md: $font-size-sm !default;
 $avatar-font-size-lg: $font-size-lg !default;
+$avatar-font-size-xl: $font-size-lg * 2 !default;
+$avatar-font-size-xxl: $font-size-lg * 4 !default;
+$avatar-size: 1rem !default;
 
 $avatar-font-weight: $font-weight-normal !default;
 
@@ -13,3 +17,21 @@ $avatar-active-bg-shade-amount:      20% !default;
 $avatar-active-bg-tint-amount:       20% !default;
 $avatar-active-border-shade-amount:  25% !default;
 $avatar-active-border-tint-amount:   10% !default;
+
+$avatar-font-sizes: (
+  xs: $avatar-font-size,
+  sm: $avatar-font-size-sm,
+  md: $avatar-font-size-md,
+  lg: $avatar-font-size-lg,
+  xl: $avatar-font-size-xl,
+  xxl: $avatar-font-size-xxl,
+) !default;
+
+$avatar-sizes: (
+  xs: 16,
+  sm: 24,
+  md: 32,
+  lg: 48,
+  xl: 64,
+  xxl: 96,
+) !default;

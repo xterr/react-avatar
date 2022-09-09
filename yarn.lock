@@ -4696,9 +4696,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xterr/react-avatar@workspace:.":
+"@xterr/react-bootstrap-avatar@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@xterr/react-avatar@workspace:."
+  resolution: "@xterr/react-bootstrap-avatar@workspace:."
   dependencies:
     "@babel/core": ^7.19.0
     "@mdx-js/react": ^1.6.22

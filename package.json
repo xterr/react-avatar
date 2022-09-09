@@ -1,14 +1,14 @@
 {
-  "name": "@xterr/react-avatar",
+  "name": "@xterr/react-bootstrap-avatar",
   "version": "1.0.0",
-  "description": "React avatar",
-  "homepage": "https://github.com/xterr/react-avatar",
+  "description": "React Bootstrap Avatar",
+  "homepage": "https://github.com/xterr/react-bootstrap-avatar",
   "bugs": {
-    "url": "https://github.com/xterr/react-avatar/issues"
+    "url": "https://github.com/xterr/react-bootstrap-avatar/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:xterr/react-avatar.git"
+    "url": "git@github.com:xterr/react-bootstrap-avatar.git"
   },
   "source": "src/index.ts",
   "main": "dist/index.js",

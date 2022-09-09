@@ -1,4 +1,4 @@
-# React Avatar
+# React Bootstrap Avatar
 
 The Avatar component which can display the person's image, initials, or an icon, and can be either circular or square.
 
@@ -6,13 +6,13 @@ The Avatar component which can display the person's image, initials, or an icon,
 ## Installation
 
 ```bash
-npm install --save @xterr/react-avatar
+npm install --save @xterr/react-bootstrap-avatar
 ```
 
 or:
 
 ```bash
-yarn add @xterr/react-avatar
+yarn add @xterr/react-bootstrap-avatar
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ yarn add @xterr/react-avatar
 To import Avatar:
 
 ```js
-import { Avatar } from '@xterr/react-avatar';
+import { Avatar } from '@xterr/react-bootstrap-avatar';
 ```
 
 ### Examples

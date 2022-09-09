@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/vendor/rfs";
+
 @mixin avatar-variant(
   $background,
   $border,
@@ -28,9 +30,11 @@
   --#{$prefix}avatar-disabled-border-color: #{$disabled-border};
 }
 
-@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
-  --#{$prefix}btn-padding-y: #{$padding-y};
-  --#{$prefix}btn-padding-x: #{$padding-x};
-  @include rfs($font-size, --#{$prefix}btn-font-size);
-  --#{$prefix}btn-border-radius: #{$border-radius};
+@mixin avatar-size($breakpoint) {
+  $avatarSize: map-get($avatar-sizes, $breakpoint);
+  $avatarSize: #{divide($avatarSize, $avatarSize * 0 + $rfs-rem-value)}rem;
+
+  @include rfs(map-get($avatar-font-sizes, $breakpoint), --#{$prefix}avatar-font-size);
+  @include rfs($avatarSize, --#{$prefix}avatar-width);
+  @include rfs($avatarSize, --#{$prefix}avatar-height);
 }
