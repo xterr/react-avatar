@@ -1,9 +1,9 @@
-$avatar-font-size: $font-size-base !default;
+$avatar-font-size: $font-size-base / 2 !default;
 $avatar-font-size-sm: $font-size-sm !default;
-$avatar-font-size-md: $font-size-sm !default;
-$avatar-font-size-lg: $font-size-lg !default;
+$avatar-font-size-md: $font-size-sm * 1.2 !default;
+$avatar-font-size-lg: $font-size-lg * 1.2 !default;
 $avatar-font-size-xl: $font-size-lg * 2 !default;
-$avatar-font-size-xxl: $font-size-lg * 4 !default;
+$avatar-font-size-xxl: $font-size-lg * 3 !default;
 $avatar-size: 1rem !default;
 
 $avatar-font-weight: $font-weight-normal !default;

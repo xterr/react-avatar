@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: center;
   vertical-align: middle;
+  box-sizing: content-box;
+  outline: none;
+  transform: translateZ(0px);
   margin: 0;
   padding: 0;
 
@@ -25,12 +28,18 @@
   height: var(--#{$prefix}avatar-height);
 }
 
-.avatar-circle {
-  border-radius: .25rem;
-
+.avatar {
   > img {
-    border-radius: .25rem;
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex: 1 1 100%;
+  }
+
+  &.rounded-circle {
+    > img {
+      border-radius: 50%;
+    }
   }
 }
 

@@ -2840,7 +2840,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-webpack4@npm:6.5.10, @storybook/builder-webpack4@npm:^6.5.10":
+"@storybook/builder-webpack4@npm:6.5.10":
   version: 6.5.10
   resolution: "@storybook/builder-webpack4@npm:6.5.10"
   dependencies:
@@ -3308,7 +3308,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-webpack4@npm:6.5.10, @storybook/manager-webpack4@npm:^6.5.10":
+"@storybook/manager-webpack4@npm:6.5.10":
   version: 6.5.10
   resolution: "@storybook/manager-webpack4@npm:6.5.10"
   dependencies:
@@ -4707,9 +4707,7 @@ __metadata:
     "@storybook/addon-essentials": ^6.5.10
     "@storybook/addon-interactions": ^6.5.10
     "@storybook/addon-links": ^6.5.10
-    "@storybook/builder-webpack4": ^6.5.10
     "@storybook/builder-webpack5": ^6.5.10
-    "@storybook/manager-webpack4": ^6.5.10
     "@storybook/manager-webpack5": ^6.5.10
     "@storybook/preset-scss": ^1.0.3
     "@storybook/react": ^6.5.10
